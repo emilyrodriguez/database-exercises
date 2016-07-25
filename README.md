@@ -1,0 +1,1 @@
+Database exercises done during MySQL portion of Codeup
