@@ -7,4 +7,6 @@ VALUES ('Michael Jackson', 'Thriller', '1982', '45.4', 'Pop'),
 	('Meat Loaf', 'Bat Out of Hell', '1977', '20.6', 'Hard Rock'),
 	('Eagles', 'Their Greatest Hits (1971–1975)', '1976', '32.2', 'Soft Rock'),
 	('Bee Gees', 'Saturday Night Fever', '1977', '19', 'Disco'),
-	('Fleetwood Mac', 'Rumors', '1977', '27.9', 'Soft Rock');
+	('Fleetwood Mac', 'Rumors', '1977', '27.9', 'Soft Rock'),
+	('Nirvana', 'Nevermind', '1991', '16.7', 'Grunge'),
+	('The Beatles', 'Sgt. Pepper''s Lonely Hearts Club Band', '1967', '13.1', 'Rock');
