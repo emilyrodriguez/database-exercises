@@ -1,6 +1,7 @@
 SELECT roles.name AS role_name, COUNT(users.name) FROM roles
 LEFT JOIN users ON users.role_id = roles.id GROUP BY role_name
 
+-- write a query that shows each department along with the name of the current manager for that department.
 SELECT
 d.dept_name AS 'Department Name', 
 CONCAT(e.first_name, ' ', e.last_name) AS 'Department Manager'
@@ -9,6 +10,8 @@ FROM `departments` d
     ON d.dept_no =m.dept_no
     join employees e ON m.emp_no = e.emp_no
 
+
+-- Find the name of all departments currently managed by women.
 SELECT
 d.dept_name AS 'Department Name', 
 CONCAT(e.first_name, ' ', e.lASt_name) AS 'Department Manager'
@@ -17,7 +20,8 @@ FROM `departments` d
     ON d.dept_no = m.dept_no
     join employees e ON m.emp_no = e.emp_no
     WHERE m.to_date = '9999-01-01' AND e.gender = 'F'
-    
+
+-- Find the current titles of employees currently working in the Customer Service department.
 SELECT 
 t.title,
 COUNT(*)
@@ -29,7 +33,7 @@ WHERE d.dept_name = 'Customer Service'
     AND de.to_date = '9999-01-01'
 GROUP BY t.title
 
-
+-- Find the current salary of all current managers.
 SELECT
     d.dept_name, 
     CONCAT(e.first_name, '', e.`last_name`) AS 'Name',
